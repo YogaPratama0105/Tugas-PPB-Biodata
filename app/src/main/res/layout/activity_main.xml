@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageview_profile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/yoga_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Yoga Adi Pratama"
+        android:layout_below="@+id/imageview_profile"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="A11.2021.13472"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageview_pic"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/profileui"
+        android:layout_below="@+id/nim"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_pic"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/icon_hobi"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobi :"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/isi_hobi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout_1"
+        android:text="-  Bermain sepak bola"
+        android:textSize="16sp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="3dp"
+        />
+
+    <TextView
+        android:id="@+id/isi_hobi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isi_hobi1"
+        android:text="-  Menonton film"
+        android:textSize="16sp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/isi_hobi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isi_hobi2"
+        android:text="-  Mendengarkan musik"
+        android:textSize="16sp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearlayout_1"
+        android:layout_marginTop="100dp"
+        >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/icon_desc"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi Singkat :"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/isi_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout_2"
+        android:text="Perkenalkan nama saya Yoga Adi Pratama, bisa dipanggil Yoga. Saya mahasiswa Udinus dari Fakultas Ilmu Komputer, Prodi Teknik Informatika. Saya berasal dari kota Pati. Lalu pada semester 3 ini pada matkul Pemrograman Perangkat Bergerak, saya belajar membuat aplikasi biodata."
+        android:textSize="16sp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="3dp"
+        />
+
+            <Button
+                android:id="@+id/btnMaps"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/isi_desc"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="5dp"
+                android:text="Alamat"
+                android:theme="@style/Theme.Material3.DynamicColors.Light"
+                />
+
+            <Button
+                android:id="@+id/btnContact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnMaps"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="5dp"
+                android:onClick="bukaTelepon"
+                android:text="Telepon"
+                android:theme="@style/Theme.Material3.DynamicColors.Light"
+                />
+
+            <Button
+                android:id="@+id/btnEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnContact"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="5dp"
+                android:onClick="bukaEmail"
+                android:text="Email"
+                android:theme="@style/Theme.Material3.DynamicColors.Light"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
